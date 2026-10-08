@@ -96,7 +96,7 @@ a:hover {
     color: var(--colorWhite)
 }
 
-.btn {
+.outlineBtn {
     width: max-content;
     display: inline-block;
     color: var(--colorPrimary);
@@ -108,15 +108,26 @@ a:hover {
 
 }
 
-.btn:hover {
-    background-color: var(--colorWhite);
-    color: var(--colorBg);
+.outlineBtn:hover {
+    background-color: var(--colorPrimary);
+    color: black;
     border-color: transparent;
 }
-.btn_primary{
-    background-color:var(--colorPrimary);
-    color:var(--colorBg)
+
+
+.stockBtn {
+    background-color: var(--colorPrimary);
+    color: var(--colorBg)
 }
+
+.stockBtn:hover {
+    background-color: transparent;
+    border: 1px solid var(--colorPrimary);
+    color: var(--colorPrimary);
+}
+
+
+
 img {
     display: block;
     width: 100%;
@@ -145,6 +156,7 @@ img {
     section>h2 {
         margin-bottom: 2rem;
     }
+
     h1 {
         font-size: 1.7rem;
     }

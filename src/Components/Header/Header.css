@@ -38,22 +38,29 @@ header {
 
 /* =================== ME ================= */
 .me {
-    width: 22rem;
-    height: 30rem;
+    width: 25rem;
+    height: 38rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 12.5rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    background: linear-gradient(rgb(46, 46, 148), var(--colorPrimary), transparent);
+    border-radius: 14rem 14rem 0 0;
+    /* background: linear-gradient(rgb(46, 46, 148), var(--colorPrimary), transparent); */
+    background: linear-gradient(to bottom,
+            #7f00ff 0%,
+            var(--colorPrimary) 40%,
+            rgba(0, 0, 0, 0) 100%);
     overflow: hidden;
 }
 
 .me img {
-    width: 110%;
-    height: 60%;
-    margin-top: 95px;
-    margin-left: -20px;
-    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 60%,
+            transparent 100%);
+    mask-image: linear-gradient(to bottom,
+            black 60%,
+            transparent 100%);
 }
 
 /* =================== Scroll down ================= */
@@ -73,20 +80,10 @@ header {
     }
 
     .me {
-        width: 20rem;
-        height: 22rem;
-        left: calc(50% - 10rem);
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
-
-    .me img {
-        width: 100%;
-        height: 78%;
-        margin-top: 70px;
-        margin-left: -10px;
-    }
-
 }
+
 /* =================== Media Quiry (phones) ================= */
 @media(max-width:600px) {
     header {
@@ -99,9 +96,9 @@ header {
     }
 
     .me {
-        width: 17rem;
-        height: 25rem;
-        left: calc(50% - 8.5rem);
+        width: 19rem;
+        height: 30rem;
+        left: calc(50% - 9.5rem);
     }
 
 }
